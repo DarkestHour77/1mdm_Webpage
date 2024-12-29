@@ -2,20 +2,41 @@ import image3 from '../Image/1mdm-product-1.png';
 import image4 from '../Image/1mdm-product-image-4.png';
 import image5 from '../Image/1mdm-product-2.png';
 import image6 from '../Image/1mdm-product-3.png';
+import { Section5_1 } from './Section5_1';
+import { useState } from 'react';
 
 function Section5(){
+
+  const [comp,setComp] = useState(<Section5_1 />);
+  
+
+function handleClick(section){
+  switch(section){
+    case 1:
+      return setComp(<Section5_1 />)
+    case 2:
+  }
+  console.log("hello")
+}
+
     return(
         <div class="section-5">
               <div class="part-7">
                 <ul>
-                  <li>Custom Storefront</li>
+                  <li onClick={() => handleClick(1)}>Custom Storefront</li>
                   <li>Advertising Tools</li>
                   <li>Data and Analytics</li>
                   <li>Customer support</li>
                 </ul>
                 
               </div>
-              <div class="part-8">
+              <div>
+                
+                {comp}
+
+                {/* <Section5_1 /> */}
+              </div>
+              {/* <div class="part-8">
                 <h1>Set up a store that showcases your brand</h1>
                 <p>Differentiate yourself from the competition with a full store dedicated to your products- no coding or design skills necessary!</p>
               </div>
@@ -42,7 +63,7 @@ function Section5(){
               </div>
               <div class="part-15">
                 <img src={image6} />
-              </div>
+              </div> */}
             </div>      
     )
 }
