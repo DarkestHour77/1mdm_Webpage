@@ -1,16 +1,6 @@
-import { useEffect, useState } from "react";
+import CountUp from "react-countup";
+
 function Section1(){
-
-  const [numOne,setNumOne]=useState(0);
- 
-
-  useEffect(()=>{
-    if(numOne < 26000000 )
-      return(setNumOne(numOne + 1000));   
-    }
-   
-  ,[numOne])
-
     return(
         <>
         <div className="section-1">
@@ -20,9 +10,23 @@ function Section1(){
         <button class="button-1">Start Selling</button>
         <button class="button-2">Chat with consultant</button>
       </div>
-      <div class="part-2">
+      <div class="part-2 text-xl">
         <h1>Reach millions of B2B buyers globally</h1>
-        {numOne.toLocaleString('en-GB')}
+        <CountUp 
+          end={26000000}
+          duration={5}
+        />
+        <br />
+        <CountUp
+          end={400000}
+          duration={5}
+        />
+
+        <br />
+        <CountUp 
+          end={200}
+          duration={5}
+         /> 
       </div>
       
     </div>
