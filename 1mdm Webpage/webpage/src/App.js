@@ -5,7 +5,6 @@ import Section2 from './Component/Section2';
 import Section3 from './Component/Section3';
 import Section4 from './Component/Section4';
 import Section5 from './Component/Section5';
-import Section6 from './Component/Section6';
 import Section7 from './Component/Section7';
 import Navbar from './Component/Navbar';
 import Section61 from './Component/Section61';

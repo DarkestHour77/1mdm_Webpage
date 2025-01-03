@@ -79,11 +79,19 @@ nav li a{
 }
 
 .part-1{
-  width: 50%;
+  width: 75%;
   font-size: 2em;
 }
 .part-2{
-  width: 50%;
+  width: 20%;
+  font-size: 2em;
+  justify-content: right;
+  justify-items: right;
+  align-items: end;
+  align-content: end;
+}
+.part-2 p{
+  font-size: 0.7em;
 }
 .part-3{
   /* justify-content: center; */
@@ -112,16 +120,25 @@ nav li a{
 }
 .part-7{
   width: 20%;
+  display: grid;
+}
+.parent{
+  display: flex ;
+
 }
 .part-8{
-  width: 30%;
-  align-content: center;
+  display: flex;
+  /* width: 30%; */
+  align-content: end;
   font-size: large;
   padding: 2em ;
+  justify-content: right;
 }
 .part-9{
-  width:40% ;
+  /* width:40% ; */
   padding: 2em;
+  display: flex;
+  align-content: right;
 }
 .part-9 img{
   height: 50vh;
